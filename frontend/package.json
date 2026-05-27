@@ -1,0 +1,37 @@
+{
+  "name": "bankrwallet-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm run sync:onchainkit-styles && next dev",
+    "build": "npm run sync:onchainkit-styles && next build",
+    "start": "next start",
+    "lint": "next lint",
+    "sync:onchainkit-styles": "cp node_modules/@coinbase/onchainkit/dist/assets/style.css public/onchainkit.css"
+  },
+  "dependencies": {
+    "@coinbase/onchainkit": "^1.1.2",
+    "@coinbase/wallet-sdk": "^4.3.7",
+    "@tanstack/react-query": "^5.100.14",
+    "@wagmi/connectors": "^6.2.0",
+    "@wagmi/core": "^2.22.1",
+    "framer-motion": "^11.18.2",
+    "lucide-react": "^0.511.0",
+    "next": "^15.5.18",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "viem": "^2.51.2",
+    "wagmi": "^2.19.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10",
+    "eslint": "^8",
+    "eslint-config-next": "^15.5.18",
+    "postcss": "^8",
+    "tailwindcss": "^3",
+    "typescript": "^5"
+  }
+}

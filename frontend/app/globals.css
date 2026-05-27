@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-gray-900 antialiased;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-full bg-brand-purple px-6 py-3 text-sm font-medium text-white transition hover:bg-brand-purple-dark;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-full border border-surface-border bg-white px-6 py-3 text-sm font-medium text-gray-900 transition hover:border-brand-purple hover:bg-brand-purple/5;
+  }
+
+  .section-container {
+    @apply mx-auto max-w-6xl px-6;
+  }
+
+  .docs-prose h1 {
+    @apply mb-6 text-3xl font-bold tracking-tight text-gray-900;
+  }
+
+  .docs-prose h2 {
+    @apply mb-4 mt-10 text-xl font-semibold text-gray-900;
+  }
+
+  .docs-prose h3 {
+    @apply mb-3 mt-6 text-lg font-medium text-gray-900;
+  }
+
+  .docs-prose p {
+    @apply mb-4 leading-relaxed text-gray-600;
+  }
+
+  .docs-prose ul {
+    @apply mb-4 list-disc space-y-2 pl-6 text-gray-600;
+  }
+
+  .docs-prose ol {
+    @apply mb-4 list-decimal space-y-2 pl-6 text-gray-600;
+  }
+
+  .docs-prose li {
+    @apply leading-relaxed;
+  }
+
+  .docs-prose code {
+    @apply rounded bg-gray-100 px-1.5 py-0.5 font-mono text-sm text-brand-purple-dark;
+  }
+
+  .docs-prose pre {
+    @apply mb-4 overflow-x-auto rounded-xl border border-surface-border bg-gray-50 p-4 font-mono text-sm text-gray-800;
+  }
+
+  .docs-prose pre code {
+    @apply bg-transparent p-0 text-gray-800;
+  }
+
+  .docs-prose table {
+    @apply mb-6 w-full border-collapse text-sm;
+  }
+
+  .docs-prose th {
+    @apply border-b border-surface-border px-4 py-3 text-left font-medium text-gray-900;
+  }
+
+  .docs-prose td {
+    @apply border-b border-surface-border px-4 py-3 text-gray-600;
+  }
+
+  .docs-prose a {
+    @apply text-brand-purple-dark underline-offset-2 hover:underline;
+  }
+}
+
+/*
+ * OnchainKit (Tailwind v4, @layer utilities) vs app Tailwind v3 preflight (unlayered).
+ * Unlayered * { --tw-translate-x: 0 } wins over layered ock:translate-* utilities,
+ * so the wallet modal gets top/left 50% but not translate(-50%, -50%).
+ */
+[data-testid="ockDialog"] {
+  translate: -50% -50%;
+  max-height: min(90dvh, calc(100vh - 2rem));
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}

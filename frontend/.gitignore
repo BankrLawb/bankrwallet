@@ -1,0 +1,48 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# generated from @coinbase/onchainkit (npm run sync:onchainkit-styles)
+/public/onchainkit.css
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# secrets — never commit (see .env.example for templates)
+.env
+.env.*
+!.env.example
+
+# deployment / hosting
+.vercel
+
+# eslint
+.eslintcache
+
+# playwright (devDependency)
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
