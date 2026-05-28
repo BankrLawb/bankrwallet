@@ -37,32 +37,45 @@ export default function Hero() {
           No KYC. Infinite Rails.
         </p>
 
-        <div className="mt-10 flex flex-wrap gap-4">
-          <Link href="/deploy" className="btn-primary">
-            Deploy Smart Wallet
+        <div className="mt-10 flex flex-wrap gap-3">
+          <Link
+            href="/deploy"
+            className="inline-flex items-center justify-center rounded-md bg-gray-900 px-5 py-3 font-mono text-sm font-bold text-white transition hover:bg-black"
+          >
+            Launch a wallet
           </Link>
-          <Link href="/docs" className="btn-secondary">
-            Read the Docs
+          <span
+            className="inline-flex cursor-default items-center justify-center rounded-md bg-gray-900 px-5 py-3 font-mono text-sm font-bold text-white/70"
+            aria-disabled
+          >
+            Wallet Agent (coming soon)
+          </span>
+          <Link
+            href="/docs"
+            className="inline-flex items-center justify-center rounded-md bg-gray-900 px-5 py-3 font-mono text-sm font-bold uppercase tracking-wide text-white transition hover:bg-black"
+          >
+            READ DOCS
           </Link>
         </div>
 
-        <div className="mt-16 max-w-2xl overflow-hidden rounded-xl border border-gray-200 bg-gray-900 shadow-lg">
+        <div className="mt-16 max-w-2xl overflow-hidden rounded-xl border border-gray-200 bg-white shadow-md">
           <motion.div
-            className="flex items-center gap-2 border-b border-gray-700 px-4 py-3"
+            className="flex items-center gap-2 border-b border-gray-100 bg-gray-50 px-4 py-3"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
           >
-            <span className="h-3 w-3 rounded-full bg-red-500/80" />
-            <span className="h-3 w-3 rounded-full bg-yellow-500/80" />
-            <span className="h-3 w-3 rounded-full bg-green-500/80" />
-            <span className="ml-2 font-mono text-xs text-gray-400">bankrlawb-cli</span>
+            <span className="h-3 w-3 rounded-full bg-red-400" />
+            <span className="h-3 w-3 rounded-full bg-yellow-400" />
+            <span className="h-3 w-3 rounded-full bg-green-400" />
+            <span className="ml-2 font-mono text-xs text-gray-500">bankrlawb-cli</span>
           </motion.div>
-          <pre className="overflow-x-auto p-6 font-mono text-sm leading-relaxed text-gray-300">
+          <pre className="overflow-x-auto bg-white p-6 font-mono text-sm leading-relaxed text-gray-900">
             <code>
-              <span className="text-brand-purple-light">$</span> connect wallet → deploy(){"\n"}
-              <span className="text-gray-500"># Coinbase Smart Wallet on Base, owned by you</span>{"\n"}
-              <span className="text-gray-500"># optional: seed ETH in the same transaction</span>
+              <span className="text-brand-purple">$</span> connect wallet → deploy(){"\n"}
+              <span className="text-gray-400"># Smart Wallet on Base, owned by you</span>{"\n"}
+              <span className="text-gray-400"># optional: seed ETH in the same transaction</span>{"\n"}
+              <span className="text-gray-400"># optional: do anything</span>
             </code>
           </pre>
         </div>

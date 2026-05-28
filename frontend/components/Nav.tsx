@@ -6,16 +6,18 @@ import NavActions from "@/components/NavActions";
 export default function Nav() {
   return (
     <header className="sticky top-0 z-50 border-b border-surface-border bg-white/90 backdrop-blur-md">
-      <div className="section-container flex h-16 items-center justify-between">
-        <Link href="/" className="flex items-center gap-3">
+      <div className="section-container flex h-16 items-center justify-between gap-2">
+        <Link href="/" className="flex min-w-0 shrink items-center gap-2 sm:gap-3">
           <Image
             src="/logo.png"
             alt="BankrLawb"
             width={36}
             height={36}
-            className="rounded-lg"
+            className="h-8 w-8 shrink-0 rounded-lg sm:h-9 sm:w-9"
           />
-          <span className="text-lg font-semibold tracking-tight text-gray-900">BankrLawb</span>
+          <span className="hidden truncate text-lg font-semibold tracking-tight text-gray-900 sm:inline">
+            BankrLawb
+          </span>
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">
