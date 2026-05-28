@@ -38,13 +38,22 @@ export default function Hero() {
         </p>
 
         <div className="mt-10 flex flex-wrap gap-3">
-          <Link href="/deploy" className="btn-primary">
+          <Link
+            href="/deploy"
+            className="btn-primary !px-7 !py-3.5 !text-sm sm:!text-base"
+          >
             Launch a wallet
           </Link>
-          <span className="btn-secondary-muted" aria-disabled>
+          <span
+            className="btn-secondary-muted !px-7 !py-3.5 !text-sm sm:!text-base"
+            aria-disabled
+          >
             Wallet Agent (coming soon)
           </span>
-          <Link href="/docs" className="btn-secondary">
+          <Link
+            href="/docs"
+            className="btn-secondary !px-7 !py-3.5 !text-sm sm:!text-base"
+          >
             Read docs
           </Link>
         </div>

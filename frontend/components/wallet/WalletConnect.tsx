@@ -15,8 +15,8 @@ type WalletConnectProps = {
 
 export function WalletConnect({ compact = false }: WalletConnectProps) {
   const buttonClass = compact
-    ? "btn-secondary !min-w-0 whitespace-nowrap px-3 py-2 sm:px-4 sm:py-2.5"
-    : "btn-secondary !min-w-0";
+    ? "!min-w-0 rounded-md px-3 py-2 text-xs font-semibold sm:px-4 sm:py-2.5 sm:text-sm"
+    : "!min-w-0 rounded-md px-4 py-2.5 text-sm";
 
   return (
     <Wallet>
