@@ -14,11 +14,15 @@
 
 @layer components {
   .btn-primary {
-    @apply inline-flex items-center justify-center rounded-full bg-brand-purple px-6 py-3 text-sm font-medium text-white transition hover:bg-brand-purple-dark;
+    @apply inline-flex items-center justify-center rounded border border-gray-950 bg-gray-950 px-6 py-3 font-mono text-xs font-normal uppercase tracking-widest text-white transition hover:bg-black sm:text-sm;
   }
 
   .btn-secondary {
-    @apply inline-flex items-center justify-center rounded-full border border-surface-border bg-white px-6 py-3 text-sm font-medium text-gray-900 transition hover:border-brand-purple hover:bg-brand-purple/5;
+    @apply inline-flex items-center justify-center rounded border border-gray-950 bg-transparent px-6 py-3 font-mono text-xs font-normal uppercase tracking-widest text-gray-950 transition hover:bg-gray-50 sm:text-sm;
+  }
+
+  .btn-secondary-muted {
+    @apply inline-flex cursor-default items-center justify-center rounded border border-gray-950 bg-transparent px-6 py-3 font-mono text-xs font-normal uppercase tracking-widest text-gray-950 opacity-50 sm:text-sm;
   }
 
   .section-container {

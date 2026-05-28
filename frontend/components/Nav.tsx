@@ -10,13 +10,13 @@ export default function Nav() {
         <Link href="/" className="flex min-w-0 shrink items-center gap-2 sm:gap-3">
           <Image
             src="/logo.png"
-            alt="BankrLawb"
+            alt="BnkLab"
             width={36}
             height={36}
             className="h-8 w-8 shrink-0 rounded-lg sm:h-9 sm:w-9"
           />
           <span className="hidden truncate text-lg font-semibold tracking-tight text-gray-900 sm:inline">
-            BankrLawb
+            BnkLab
           </span>
         </Link>
 
