@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   ),
   title: "BankrLawb - Agentic Wallet Framework",
   description:
-    "Secure your agent. Spin up as many Coinbase Smart Wallets as you want on Base. Self-custodied, no seed phrase, Infinite Rails.",
+    "Secure your agent. Spin up as many Smart Wallets as you want on Base. Self-custodied, no seed phrase, Infinite Rails.",
   icons: {
     icon: "/logo.png",
     apple: "/logo.png",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "BankrLawb - Agentic Wallet Framework",
     description:
-      "Deploy Coinbase Smart Wallets on Base. Self-custodied, agentic, Infinite Rails.",
+      "Deploy Smart Wallets on Base. Self-custodied, agentic, Infinite Rails.",
     images: ["/logo.png"],
   },
 };
