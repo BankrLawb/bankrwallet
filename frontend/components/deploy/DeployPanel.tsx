@@ -17,6 +17,7 @@ import {
 import SendFromWallet, {
   type SendableWallet,
 } from "@/components/deploy/SendFromWallet";
+import { WalletConnect } from "@/components/wallet/WalletConnect";
 import {
   factoryAbi,
   getDeployCount,
@@ -223,13 +224,14 @@ export default function DeployPanel() {
           Your connected address becomes the owner of each new Coinbase Smart Wallet.
         </p>
 
-        {!isConnected ? (
-          <p className="mt-4 text-sm text-gray-600">
-            Use the <strong>Connect wallet</strong> button in the header to sign in with
-            Coinbase Smart Wallet (email or passkey) or a browser extension.
-          </p>
-        ) : (
-          <p className="mt-4 font-mono text-sm text-gray-700">{shorten(address!, 6)}</p>
+        <p className="mt-4 text-sm text-gray-600">
+          Sign in with Coinbase Smart Wallet (email or passkey) or a browser extension.
+        </p>
+        <div className="mt-4">
+          <WalletConnect />
+        </div>
+        {isConnected && (
+          <p className="mt-3 font-mono text-sm text-gray-700">{shorten(address!, 6)}</p>
         )}
       </section>
 
