@@ -20,8 +20,8 @@ export function WalletConnect({
   variant = "default",
 }: WalletConnectProps) {
   const buttonClass = compact
-    ? "!min-w-0 rounded-md px-3 py-2 text-xs font-semibold sm:px-4 sm:py-2.5 sm:text-sm"
-    : "!min-w-0 rounded-md px-4 py-2.5 text-sm font-semibold";
+    ? "!min-w-[120px] rounded-md px-3 py-2 text-xs font-semibold sm:!min-w-[140px] sm:px-4 sm:py-2.5 sm:text-sm"
+    : "!min-w-[153px] rounded-md px-4 py-2.5 text-sm font-semibold";
 
   const variantClass =
     variant === "purple"
@@ -35,7 +35,7 @@ export function WalletConnect({
         disconnectedLabel={
           compact ? (
             <>
-              <span className="sm:hidden">Connect</span>
+              <span className="sm:hidden">Wallet</span>
               <span className="hidden sm:inline">Connect wallet</span>
             </>
           ) : (
@@ -47,7 +47,7 @@ export function WalletConnect({
         <Name
           className={
             compact
-              ? "hidden max-w-[5.5rem] truncate sm:inline sm:max-w-[7rem]"
+              ? "max-w-[4.75rem] truncate text-xs sm:max-w-[7rem] sm:text-sm"
               : undefined
           }
         />
