@@ -6,7 +6,7 @@ import { configuredChain, isMainnet } from "@/lib/chains";
 export const metadata: Metadata = {
   title: "Deploy Smart Wallet - BnkLab",
   description:
-    "Deploy a Coinbase Smart Wallet on Base owned by your connected address.",
+    "Deploy a Smart Wallet on Base owned by your connected address.",
 };
 
 export default function DeployPage() {
@@ -21,14 +21,14 @@ export default function DeployPage() {
           {chainLabel}
         </p>
         <h1 className="text-3xl font-bold tracking-tight text-gray-900 md:text-4xl">
-          Deploy a Coinbase Smart Wallet
+          Deploy a Smart Wallet
         </h1>
         <p className="mt-4 max-w-2xl text-gray-600">
           Connect your wallet and call{" "}
           <code className="rounded bg-gray-100 px-1.5 py-0.5 font-mono text-sm">
             createAccount()
           </code>{" "}
-          on the Coinbase Smart Wallet factory (v1.1). You own the new smart wallet on{" "}
+          on the Smart Wallet factory (v1.1). You own the new smart wallet on{" "}
           {configuredChain.name}; optional ETH seeds it in the same transaction. Send
           ETH from a deployed wallet in step 3 (owner signs via MetaMask).
         </p>
