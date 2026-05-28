@@ -53,7 +53,7 @@ export function WalletConnect({
         />
       </ConnectWallet>
       <WalletDropdown>
-        <WalletDropdownDisconnect />
+        <WalletDropdownDisconnect className="rounded-md px-3 py-2 text-sm font-medium transition-colors hover:bg-red-50" />
       </WalletDropdown>
     </Wallet>
   );
