@@ -11,17 +11,27 @@ import {
 type WalletConnectProps = {
   /** Tighter layout for the main nav on small screens */
   compact?: boolean;
+  /** Purple CTA styling (deploy page) */
+  variant?: "default" | "purple";
 };
 
-export function WalletConnect({ compact = false }: WalletConnectProps) {
+export function WalletConnect({
+  compact = false,
+  variant = "default",
+}: WalletConnectProps) {
   const buttonClass = compact
     ? "!min-w-0 rounded-md px-3 py-2 text-xs font-semibold sm:px-4 sm:py-2.5 sm:text-sm"
-    : "!min-w-0 rounded-md px-4 py-2.5 text-sm";
+    : "!min-w-0 rounded-md px-4 py-2.5 text-sm font-semibold";
+
+  const variantClass =
+    variant === "purple"
+      ? "!border-0 !bg-brand-purple !text-white hover:!bg-brand-purple-dark"
+      : "";
 
   return (
     <Wallet>
       <ConnectWallet
-        className={buttonClass}
+        className={[buttonClass, variantClass].filter(Boolean).join(" ")}
         disconnectedLabel={
           compact ? (
             <>

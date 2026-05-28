@@ -228,7 +228,7 @@ export default function DeployPanel() {
           Sign in with Coinbase Smart Wallet (email or passkey) or a browser extension.
         </p>
         <div className="mt-4">
-          <WalletConnect />
+          <WalletConnect variant="purple" />
         </div>
         {isConnected && (
           <p className="mt-3 font-mono text-sm text-gray-700">{shorten(address!, 6)}</p>

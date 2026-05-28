@@ -33,7 +33,7 @@ export default function DeployHeader() {
           >
             Home
           </Link>
-          <WalletConnect />
+          <WalletConnect variant="purple" />
         </nav>
       </div>
     </header>
