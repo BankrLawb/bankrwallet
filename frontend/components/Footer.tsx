@@ -22,7 +22,7 @@ export default function Footer() {
             Docs
           </Link>
           <a
-            href="https://github.com"
+            href="https://github.com/BankrLawb/bankrwallet"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1 transition hover:text-gray-900"

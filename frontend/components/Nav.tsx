@@ -15,7 +15,7 @@ export default function Nav() {
             height={36}
             className="h-8 w-8 shrink-0 rounded-lg sm:h-9 sm:w-9"
           />
-          <span className="hidden truncate text-lg font-semibold tracking-tight text-gray-900 sm:inline">
+          <span className="truncate text-base font-semibold tracking-tight text-gray-900 sm:text-lg">
             BnkLab
           </span>
         </Link>
@@ -28,7 +28,7 @@ export default function Nav() {
             Docs
           </Link>
           <a
-            href="https://github.com"
+            href="https://github.com/BankrLawb/bankrwallet"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 text-sm text-gray-600 transition hover:text-gray-900"

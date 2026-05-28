@@ -25,6 +25,18 @@
     @apply inline-flex cursor-default items-center justify-center rounded border border-gray-950 bg-transparent px-6 py-3 font-mono text-xs font-normal uppercase tracking-widest text-gray-950 opacity-50 sm:text-sm;
   }
 
+  .btn-hero-primary {
+    @apply btn-primary !px-4 !py-2 !text-base !tracking-wide sm:!text-lg;
+  }
+
+  .btn-hero-secondary {
+    @apply btn-secondary !px-4 !py-2 !text-base !tracking-wide sm:!text-lg;
+  }
+
+  .btn-hero-secondary-muted {
+    @apply btn-secondary-muted !px-4 !py-2 !text-base !tracking-wide sm:!text-lg;
+  }
+
   .section-container {
     @apply mx-auto max-w-6xl px-6;
   }

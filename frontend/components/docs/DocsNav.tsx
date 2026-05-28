@@ -19,7 +19,7 @@ export default function DocsNav() {
           <span className="text-sm text-gray-600">Docs</span>
         </Link>
         <a
-          href="https://github.com"
+          href="https://github.com/BankrLawb/bankrwallet"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-1 text-sm text-gray-600 transition hover:text-gray-900"

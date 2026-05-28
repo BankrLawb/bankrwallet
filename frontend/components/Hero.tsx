@@ -27,7 +27,7 @@ export default function Hero() {
           Owned by you. Built for people + agents.
         </p>
 
-        <h1 className="flex max-w-4xl flex-col text-4xl font-extrabold leading-tight tracking-tight md:text-6xl md:leading-[1.1]">
+        <h1 className="flex max-w-4xl flex-col text-[2.5875rem] font-extrabold leading-tight tracking-tight md:text-[4.3125rem] md:leading-[1.1]">
           <span className="text-brand-purple">Agentic Wallet</span>
           <span className="text-brand-purple">Framework</span>
         </h1>
@@ -37,23 +37,14 @@ export default function Hero() {
           No KYC. Infinite Rails.
         </p>
 
-        <div className="mt-10 flex flex-wrap gap-3">
-          <Link
-            href="/deploy"
-            className="btn-primary !px-7 !py-3.5 !text-sm sm:!text-base"
-          >
+        <div className="mt-10 flex flex-wrap gap-2">
+          <Link href="/deploy" className="btn-hero-primary">
             Launch a wallet
           </Link>
-          <span
-            className="btn-secondary-muted !px-7 !py-3.5 !text-sm sm:!text-base"
-            aria-disabled
-          >
+          <span className="btn-hero-secondary-muted" aria-disabled>
             Wallet Agent (coming soon)
           </span>
-          <Link
-            href="/docs"
-            className="btn-secondary !px-7 !py-3.5 !text-sm sm:!text-base"
-          >
+          <Link href="/docs" className="btn-hero-secondary">
             Read docs
           </Link>
         </div>
