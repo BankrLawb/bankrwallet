@@ -3,9 +3,9 @@ import Link from "next/link";
 export default function DocsOverviewPage() {
   return (
     <>
-      <h1>BankrLawb Documentation</h1>
+      <h1>BnkLab Documentation</h1>
       <p>
-        <strong className="text-gray-900">BankrLawb</strong> is the app and docs for
+        <strong className="text-gray-900">BnkLab</strong> is the app and docs for
         deploying <strong className="text-gray-900">Coinbase Smart Wallets</strong> on
         Base. You connect a wallet, call the official factory{" "}
         <code>createAccount()</code>, and receive a new smart wallet owned by your

@@ -9,12 +9,12 @@ export default function DocsNav() {
         <Link href="/" className="flex items-center gap-2">
           <Image
             src="/logo.png"
-            alt="BankrLawb"
+            alt="BnkLab"
             width={28}
             height={28}
             className="rounded-md"
           />
-          <span className="text-sm font-semibold text-gray-900">BankrLawb</span>
+          <span className="text-sm font-semibold text-gray-900">BnkLab</span>
           <span className="text-gray-400">/</span>
           <span className="text-sm text-gray-600">Docs</span>
         </Link>

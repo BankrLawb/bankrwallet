@@ -6,7 +6,7 @@ export default function ContractsPage() {
     <>
       <h1>Contracts Reference</h1>
       <p>
-        BankrLawb calls the <strong className="text-gray-900">Coinbase Smart Wallet
+        BnkLab calls the <strong className="text-gray-900">Coinbase Smart Wallet
         factory v1.1</strong> on Base directly. No custom deploy helper is deployed by
         the app.
       </p>

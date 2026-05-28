@@ -4,7 +4,7 @@ import DeployPanel from "@/components/deploy/DeployPanel";
 import { configuredChain, isMainnet } from "@/lib/chains";
 
 export const metadata: Metadata = {
-  title: "Deploy Smart Wallet - BankrLawb",
+  title: "Deploy Smart Wallet - BnkLab",
   description:
     "Deploy a Coinbase Smart Wallet on Base owned by your connected address.",
 };
