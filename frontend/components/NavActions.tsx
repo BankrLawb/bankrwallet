@@ -9,9 +9,10 @@ export default function NavActions() {
       <WalletConnect compact />
       <Link
         href="/deploy"
-        className="inline-flex items-center justify-center whitespace-nowrap rounded-full bg-brand-purple px-2.5 py-2 text-[10px] font-semibold uppercase tracking-wide text-white transition hover:bg-brand-purple-dark sm:px-6 sm:py-3 sm:text-sm sm:tracking-normal"
+        className="inline-flex items-center justify-center whitespace-nowrap rounded-full bg-brand-purple px-3 py-2 text-xs font-medium text-white transition hover:bg-brand-purple-dark sm:px-6 sm:py-3 sm:text-sm"
       >
-        Launch Smart Wallet
+        <span className="sm:hidden">Deploy</span>
+        <span className="hidden sm:inline">Deploy Wallet</span>
       </Link>
     </div>
   );
